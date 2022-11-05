@@ -234,7 +234,8 @@ button {
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-bottom: 10 px;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .peculiarities-text {
@@ -247,6 +248,7 @@ button {
 .container-peculiarities {
   background-color: #f5f4fa;
   padding: 25px 100px;
+  margin-bottom: 30px;
 }
 
 .activity-list {
@@ -317,7 +319,7 @@ button {
   letter-spacing: 0.03em;
   color: var(--third-color);
   text-align: center;
-  margin-bottom: var(--specific-ident-fifth);
+  margin-bottom: 16px;
 }
 
 .team-icon {
@@ -458,15 +460,13 @@ button {
 
 .social-list {
   display: flex;
+  padding-bottom: 30px;
 }
 
 .social-item {
   width: 44px;
   height: 44px;
-  background-color: var(--main-color);
   margin-right: 10px;
-  margin-bottom: 30px;
-  margin-top: 16px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -477,12 +477,21 @@ button {
   margin-right: 0;
 }
 
+.team-list .social-link:hover .team-icon {
+  background-color: var(--second-color);
+}
+
 .team-icon {
   fill: #afb1b8;
 }
 
+.team-icon:hover {
+  fill: var(--fourth-color);
+}
+
 .clients {
-  padding: 94px 0;
+  padding-top: var(--specific-ident);
+  padding-bottom: var(--specific-ident);
 }
 
 .title-clients {
