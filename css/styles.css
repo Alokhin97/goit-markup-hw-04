@@ -38,14 +38,18 @@ body {
 }
 
 .page-footer {
-  padding: 60px 0 57px 0;
+  background-color: #2f303a;
 }
 
 .hero {
-  background-color: #2f303a;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: url(../images/m.jpg);
+  background-color: #c4c4c4;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/m.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -86,10 +90,6 @@ body {
   border: 0;
   margin: 0 auto;
   background-color: var(--second-color);
-}
-
-.page-footer {
-  background-color: #2f303a;
 }
 
 .link {
@@ -423,6 +423,11 @@ button {
   margin-left: var(--specific-ident-fifth);
 }
 
+.cards-list-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .cards-list-item:nth-last-child(-n + 4) {
   margin-bottom: 0px;
 }
@@ -461,37 +466,23 @@ button {
 .social-list {
   display: flex;
   padding-bottom: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 .social-item {
   width: 44px;
   height: 44px;
-  margin-right: 10px;
   border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .social-item:not(:last-child) {
-  margin-right: 0;
-}
-
-.team-list .social-link:hover .team-icon {
-  background-color: var(--second-color);
-}
-
-.team-icon {
-  fill: #afb1b8;
-}
-
-.team-icon:hover {
-  fill: var(--fourth-color);
+  margin-right: 10px;
 }
 
 .clients {
-  padding-top: var(--specific-ident);
   padding-bottom: var(--specific-ident);
+  padding-top: var(--specific-ident);
 }
 
 .title-clients {
@@ -501,21 +492,94 @@ button {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-color);
-  margin-bottom: var(--specific-ident-second);
+  display: flex;
+  padding-left: 453px;
 }
 
 .list-clients {
   display: flex;
   justify-content: center;
+  margin-top: var(--specific-ident-second);
+  margin-bottom: 0;
+}
+
+.item-clients:not(:last-child) {
+  margin-right: 30px;
+}
+
+.list-clients .clients-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  background-color: var(--fourth-color);
+}
+
+.list-clients .clients-link:hover .clients-icon {
+  fill: var(--second-color);
+}
+
+.list-clients .clients-icon {
+  fill: #afb1b8;
 }
 
 .container-clients {
-  padding: 16px 32px;
+  width: 170px;
+  height: 92px;
   border: 1px solid #afb1b8;
-  margin-right: 30px;
   border-radius: 4px;
+  padding: 16px 32px;
 }
 
-.container-clients:not(:last-child) {
-  margin-right: 0;
+.container-clients:hover {
+  background-color: var(--fourth-color);
+}
+
+.address-footer-join {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 0;
+}
+
+.join {
+  width: 50%;
+}
+
+.title-join {
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--fourth-color);
+  margin-bottom: 20px;
+}
+
+.social-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-link:hover .team-icon {
+  fill: var(--fourth-color);
+}
+
+.team-icon {
+  fill: #afb1b8;
+}
+
+.social-link:hover {
+  background-color: var(--second-color);
+}
+
+.social-list-second {
+  display: flex;
+  padding-left: 0;
+  margin: 0;
 }
