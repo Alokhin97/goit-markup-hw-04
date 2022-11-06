@@ -39,6 +39,7 @@ body {
 
 .page-footer {
   background-color: #2f303a;
+  padding: 60px 0;
 }
 
 .hero {
@@ -105,7 +106,7 @@ body {
 
 .kontakt-icon {
   margin-right: 10px;
-  fill: #757575;
+  fill: currentColor;
   stroke: currentColor;
 }
 
@@ -246,9 +247,11 @@ button {
   color: var(--third-color);
 }
 
-.container-peculiarities {
+.link-peculiarities {
   background-color: #f5f4fa;
-  padding: 25px 100px;
+  padding: 25px 0;
+  display: flex;
+  justify-content: center;
   margin-bottom: 30px;
 }
 
@@ -481,9 +484,8 @@ button {
   margin-right: 10px;
 }
 
-.clients {
-  padding-bottom: var(--specific-ident);
-  padding-top: var(--specific-ident);
+.сlients {
+  padding: var(--specific-ident) 0;
 }
 
 .title-clients {
@@ -504,6 +506,16 @@ button {
   margin-bottom: 0;
 }
 
+.item-clients {
+  width: 170px;
+  height: 92px;
+  border-radius: 4px;
+  padding: 16px 0;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #afb1b8;
+}
+
 .item-clients:not(:last-child) {
   margin-right: 30px;
 }
@@ -516,6 +528,7 @@ button {
   justify-content: center;
   border-radius: 4px;
   background-color: var(--fourth-color);
+  color: #afb1b8;
 }
 
 .list-clients .clients-link:hover .clients-icon {
@@ -523,25 +536,7 @@ button {
 }
 
 .list-clients .clients-icon {
-  fill: #afb1b8;
-}
-
-.container-clients {
-  width: 170px;
-  height: 92px;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-  padding: 16px 32px;
-}
-
-.container-clients:hover {
-  background-color: var(--fourth-color);
-}
-
-.address-footer-join {
-  display: flex;
-  justify-content: space-between;
-  padding: 60px 0;
+  fill: currentColor;
 }
 
 .join {
@@ -565,17 +560,26 @@ button {
   justify-content: center;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
+  color: #afb1b8;
 }
 
 .social-link:hover .team-icon {
   fill: var(--fourth-color);
 }
 
+.social-link:focus .team-icon {
+  fill: var(--fourth-color);
+}
+
 .team-icon {
-  fill: #afb1b8;
+  fill: currentColor;
 }
 
 .social-link:hover {
+  background-color: var(--second-color);
+}
+
+.social-link:focus {
   background-color: var(--second-color);
 }
 
